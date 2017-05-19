@@ -1,5 +1,6 @@
 import scrapy
 import os
+import re
 
 base_url = 'http://neuromorpho.org/neuron_info.jsp?neuron_name='
 neuron_folder = 'neurons/'
@@ -15,7 +16,7 @@ class LFeatureSpider(scrapy.Spider):
             files = os.listdir(neuron_folder + dir)
             for file in files:
                 self.urls.append(base_url + file.split(".")[0])
-                self.filepaths.append(neuron_folder + dir + '\\' + file.split('.')[0] + '.txt')
+                self.filepaths.append(neuron_folder + dir + '/' + file.split('.')[0] + '.txt')
 
     def start_requests(self):
         self.read_in_all_neurons()
@@ -29,12 +30,13 @@ class LFeatureSpider(scrapy.Spider):
         itemnames = info.css('td[align=right]::text').extract()
         itemvalues = info.css('td[align=left]::text').extract()
 
-        itemnames[:] = [itemname.split(u'\xa0')[0].replace(u' ', u'_') for itemname in itemnames]
-        itemvalues[:] = [itemvalue.split(u'\xa0')[0] for itemvalue in itemvalues]
+        itemnames[:] = [re.sub('[^a-zA-z0-9\.]', '', itemname) for itemname in itemnames]
+        itemvalues[:] = [re.sub('[^0-9\.]', '', itemvalue) for itemvalue in itemvalues]
 
-        print(filename)
-        print(itemnames)
-        print(itemvalues)
-        # with open('output/' + filename, 'wb') as f:
-        #    f.write(response.body)
-        # self.log('Saved file %s' % filename)
+        # print(filename)
+        # print(itemnames)
+        # print(itemvalues)
+        with open(filename, 'w') as f:
+            for itemname, itemvalue in zip(itemnames[2:], itemvalues[2:]):
+                f.write(itemname + " " + itemvalue + '\n')
+        self.log('Saved file %s' % filename)
