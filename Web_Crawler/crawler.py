@@ -4,6 +4,7 @@ import re
 
 base_url = 'http://neuromorpho.org/neuron_info.jsp?neuron_name='
 neuron_folder = 'neurons/'
+output_folder = 'output/'
 
 class LFeatureSpider(scrapy.Spider):
     name = "l-feature"
@@ -16,7 +17,7 @@ class LFeatureSpider(scrapy.Spider):
             files = os.listdir(neuron_folder + dir)
             for file in files:
                 self.urls.append(base_url + file.split(".")[0])
-                self.filepaths.append(neuron_folder + dir + '/' + file.split('.')[0] + '.txt')
+                self.filepaths.append(output_folder + dir + '/' + file.split('.')[0] + '.txt')
 
     def start_requests(self):
         self.read_in_all_neurons()
@@ -36,6 +37,10 @@ class LFeatureSpider(scrapy.Spider):
         # print(filename)
         # print(itemnames)
         # print(itemvalues)
+        dir_path = filename[:filename.rfind('/')]
+        if not os.path.exists(dir_path):
+            os.mkdir(dir_path)
+
         with open(filename, 'w') as f:
             for itemname, itemvalue in zip(itemnames[2:], itemvalues[2:]):
                 f.write(itemname + " " + itemvalue + '\n')
