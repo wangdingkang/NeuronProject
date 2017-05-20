@@ -1,5 +1,6 @@
 import os
 import numpy as np
+import scipy.spatial.distance as spd
 
 input_folder = 'crawled/'
 dist_mat_folder = 'distance_mat/'
@@ -53,10 +54,20 @@ if __name__ == '__main__':
         data.append(features)
         neurons.append(NeuronFeature(input_file, features))
 
-    print(data)
+    # print(data)
     means = np.mean(np.array(data), axis=0).tolist()
     stds = np.std(np.array(data), axis=0, ddof=1).tolist()
 
+    data = []
     for neuron in neurons:
         neuron.z_score(means, stds)
-        neuron.output()
+        data.append(neuron.data)
+       # neuron.output()
+
+    np_data = np.array(data)
+    pdists = spd.squareform(spd.pdist(np_data, 'euclidean')).tolist()
+    with open(dist_mat_folder + 'distances.txt', 'w') as file:
+        for row in pdists:
+            for ele in row:
+                file.write('{0:.6f}'.format(ele) + ' ')
+            file.write('\n')
