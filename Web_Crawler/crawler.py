@@ -4,7 +4,7 @@ import re
 
 base_url = 'http://neuromorpho.org/neuron_info.jsp?neuron_name='
 neuron_folder = 'neurons/'
-output_folder = 'output/'
+output_folder = 'crawled/'
 
 class LFeatureSpider(scrapy.Spider):
     name = "l-feature"
