@@ -93,8 +93,9 @@ int main(int argc, char **argv) {
 	 * Please change these variables to satisfy your directory accordingly.
 	 */
 	string distanceMatrixFile = "data/distances.txt";
-	string kNNFile = "data/kNN.txt";
-	int k = 5;
-	getNearestKNeighbor(distanceMatrixFile, kNNFile, k);
+	for(int k = 1; k <=5; k++) {
+		string kNNFile = "data/" + to_string(k) + "NN.txt";
+		getNearestKNeighbor(distanceMatrixFile, kNNFile, k);
+	}
 	return 0;
 }
