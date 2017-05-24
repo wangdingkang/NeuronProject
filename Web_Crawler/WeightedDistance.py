@@ -1,7 +1,10 @@
 import numpy as np
 
-input_file1 = 'distance_mat/L1/distances_23478_removed.txt'
-input_file2 = 'distance_mat/L1/distances_dp.txt'
+alpha = 0.25
+
+input_file1 = 'distance_mat/L1/distances_dvec.txt'
+input_file2 = 'distance_mat/L1/distances_23478_removed.txt'
+output_file = 'distance_mat/L1/distances_dvec_L23478_' + str(alpha) + '_' + str(1 - alpha) + '.txt'
 
 if __name__ == '__main__':
     data1, data2 = [], []
@@ -23,4 +26,12 @@ if __name__ == '__main__':
     max2 = np_data2.max()
     np_data1 = np.divide(np_data1, max1)
     np_data2 = np.divide(np_data2, max2)
-    np_weight = np.add(np.multiply(np_data1, 0.5), np.multiply(np_data2, 0.5))
+    np_weight = np.add(np.multiply(np_data1, alpha), np.multiply(np_data2, 1 - alpha))
+
+    with open(output_file, 'w') as file:
+        s = len(data1)
+        file.write(str(s) + ' ' + str(s) + '\n')
+        for row in np_weight.tolist():
+            for ele in row:
+                file.write('{0:.6f}'.format(ele) + ' ')
+            file.write('\n')
