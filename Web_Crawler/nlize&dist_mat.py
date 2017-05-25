@@ -2,7 +2,7 @@ import os
 import numpy as np
 import scipy.spatial.distance as spd
 
-input_folder = 'crawled/'
+input_folder = 'crawled_transfer_to_old/'
 dist_mat_folder = 'distance_mat/'
 normalize_folder = 'normalized_info/'
 
@@ -64,29 +64,29 @@ if __name__ == '__main__':
     # cnt_file = len(input_files)
     data = []
     for input_file in input_files:
-        features = read_file(input_file)
-        # features = read_file_remove_23478(input_file)
+        # features = read_file(input_file)
+        features = read_file_remove_23478(input_file)
         data.append(features)
         neurons.append(NeuronFeature(input_file, features))
 
     # Z-score Normalization
-    means = np.mean(np.array(data), axis=0).tolist()
-    stds = np.std(np.array(data), axis=0, ddof=1).tolist()
-
-    data = []
-    for neuron in neurons:
-        neuron.z_score(means, stds)
-        data.append(neuron.data)
-
-    # Max-Min Normalization
-    # npdata = np.array(data)
-    # maxs = np.ndarray.max(npdata, axis=0).tolist()
-    # mins = np.ndarray.min(npdata, axis=0).tolist()
+    # means = np.mean(np.array(data), axis=0).tolist()
+    # stds = np.std(np.array(data), axis=0, ddof=1).tolist()
     #
     # data = []
     # for neuron in neurons:
-    #     neuron.max_min(maxs, mins)
+    #     neuron.z_score(means, stds)
     #     data.append(neuron.data)
+
+    # Max-Min Normalization
+    npdata = np.array(data)
+    maxs = np.ndarray.max(npdata, axis=0).tolist()
+    mins = np.ndarray.min(npdata, axis=0).tolist()
+
+    data = []
+    for neuron in neurons:
+        neuron.max_min(maxs, mins)
+        data.append(neuron.data)
 
     # Max-Min normalization with angle in 0 - 180
     # npdata = np.array(data)
@@ -103,8 +103,8 @@ if __name__ == '__main__':
     #     data.append(neuron.data)
 
     np_data = np.array(data)
-    pdists = spd.squareform(spd.pdist(np_data, 'cityblock')).tolist()
-    with open(dist_mat_folder + 'distances_zscore.txt', 'w') as file:
+    pdists = spd.squareform(spd.pdist(np_data, 'euclidean')).tolist()
+    with open(dist_mat_folder + 'distances_dvec_23478_L2.txt', 'w') as file:
         s = str(len(data))
         file.write(s + ' ' + s + '\n')
         for row in pdists:
