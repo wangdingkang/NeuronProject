@@ -64,8 +64,8 @@ if __name__ == '__main__':
     # cnt_file = len(input_files)
     data = []
     for input_file in input_files:
-        # features = read_file(input_file)
-        features = read_file_remove_23478(input_file)
+        features = read_file(input_file)
+        # features = read_file_remove_23478(input_file)
         data.append(features)
         neurons.append(NeuronFeature(input_file, features))
 
@@ -102,24 +102,24 @@ if __name__ == '__main__':
     #     neuron.max_min(maxs, mins)
     #     data.append(neuron.data)
 
-    np_data = np.array(data)
-    pdists = spd.squareform(spd.pdist(np_data, 'euclidean')).tolist()
-    with open(dist_mat_folder + 'distances_dvec_23478_L2.txt', 'w') as file:
-        s = str(len(data))
-        file.write(s + ' ' + s + '\n')
-        for row in pdists:
-            for ele in row:
-                file.write('{0:.6f}'.format(ele) + ' ')
-            file.write('\n')
+    # np_data = np.array(data)
+    # pdists = spd.squareform(spd.pdist(np_data, 'euclidean')).tolist()
+    # with open(dist_mat_folder + 'distances_dvec_23478_L2.txt', 'w') as file:
+    #     s = str(len(data))
+    #     file.write(s + ' ' + s + '\n')
+    #     for row in pdists:
+    #         for ele in row:
+    #             file.write('{0:.6f}'.format(ele) + ' ')
+    #         file.write('\n')
 
     # For all features
-    # np_data = np.array(data)
-    # for i in range(np_data.shape[1]):
-    #     col_data = np_data[:, i]
-    #     with open(dist_mat_folder + 'distances_feature' + str(i) + '.txt', 'w') as file:
-    #         s = str(len(data))
-    #         file.write(s + ' ' + s + '\n')
-    #         for e1 in col_data:
-    #             for e2 in col_data:
-    #                 file.write('{0:.6f}'.format(abs(e1 - e2)) + ' ')
-    #             file.write('\n')
+    np_data = np.array(data)
+    for i in range(np_data.shape[1]):
+        col_data = np_data[:, i]
+        with open(dist_mat_folder + 'distances_feature' + str(i) + '.txt', 'w') as file:
+            s = str(len(data))
+            file.write(s + ' ' + s + '\n')
+            for e1 in col_data:
+                for e2 in col_data:
+                    file.write('{0:.6f}'.format(abs(e1 - e2)) + ' ')
+                file.write('\n')

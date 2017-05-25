@@ -1,10 +1,10 @@
 import numpy as np
 
-alpha = 0.75
+alpha = 0.25
 
-input_file1 = 'distance_mat/L2/distances_dvec.txt'
-input_file2 = 'distance_mat/L2/distances_23478_removed.txt'
-output_file = 'distance_mat/L2/distances_dvec_L23478_' + str(alpha) + '_' + str(1 - alpha) + '.txt'
+input_file1 = 'distance_mat/old_dataset/distances_dvec.txt'
+input_file2 = 'distance_mat/old_dataset/distances_dvec_23478_L1.txt'
+output_file = 'distance_mat/old_dataset/distances_dvec_23478_L1_' + str(alpha) + '_' + str(1 - alpha) + '.txt'
 
 if __name__ == '__main__':
     data1, data2 = [], []
