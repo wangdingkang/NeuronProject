@@ -1,9 +1,9 @@
 import os
 from shutil import copyfile
 
-input_neuron = 'old_dataset/'
+input_neuron = 'subsampled/'
 input_info = 'crawled/'
-output = 'crawled_transfer_to_old/'
+output = 'subsampled_data/'
 
 if __name__ == '__main__':
 
