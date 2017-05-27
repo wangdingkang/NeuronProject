@@ -2,7 +2,7 @@ import os
 import numpy as np
 import scipy.spatial.distance as spd
 
-input_folder = 'crawled_transfer_to_old/'
+input_folder = 'subsampled_data/'
 dist_mat_folder = 'distance_mat/'
 normalize_folder = 'normalized_info/'
 
@@ -29,13 +29,13 @@ class NeuronFeature:
                 file.write(str(datum) + '\n')
 
 
-def all_input_files():
+def all_input_files(input_dir):
     ret = []
-    dirs = os.listdir(input_folder)
+    dirs = os.listdir(input_dir)
     for dir in dirs:
-        files = os.listdir(input_folder + dir)
+        files = os.listdir(input_dir + dir)
         for file in files:
-            ret.append(input_folder + dir + '/' + file)
+            ret.append(input_dir + dir + '/' + file)
     return ret
 
 
@@ -59,67 +59,68 @@ def read_file_remove_23478(filename):
 
 
 if __name__ == '__main__':
-    input_files = all_input_files()
-    neurons = []
-    # cnt_file = len(input_files)
-    data = []
-    for input_file in input_files:
-        features = read_file(input_file)
-        # features = read_file_remove_23478(input_file)
-        data.append(features)
-        neurons.append(NeuronFeature(input_file, features))
+    for i in range(20):
+        input_files = all_input_files(input_folder + str(i) + '/')
+        neurons = []
+        # cnt_file = len(input_files)
+        data = []
+        for input_file in input_files:
+            # features = read_file(input_file)
+            features = read_file_remove_23478(input_file)
+            data.append(features)
+            neurons.append(NeuronFeature(input_file, features))
 
-    # Z-score Normalization
-    # means = np.mean(np.array(data), axis=0).tolist()
-    # stds = np.std(np.array(data), axis=0, ddof=1).tolist()
-    #
-    # data = []
-    # for neuron in neurons:
-    #     neuron.z_score(means, stds)
-    #     data.append(neuron.data)
+        # Z-score Normalization
+        # means = np.mean(np.array(data), axis=0).tolist()
+        # stds = np.std(np.array(data), axis=0, ddof=1).tolist()
+        #
+        # data = []
+        # for neuron in neurons:
+        #     neuron.z_score(means, stds)
+        #     data.append(neuron.data)
 
-    # Max-Min Normalization
-    npdata = np.array(data)
-    maxs = np.ndarray.max(npdata, axis=0).tolist()
-    mins = np.ndarray.min(npdata, axis=0).tolist()
+        # Max-Min Normalization
+        npdata = np.array(data)
+        maxs = np.ndarray.max(npdata, axis=0).tolist()
+        mins = np.ndarray.min(npdata, axis=0).tolist()
 
-    data = []
-    for neuron in neurons:
-        neuron.max_min(maxs, mins)
-        data.append(neuron.data)
+        data = []
+        for neuron in neurons:
+            neuron.max_min(maxs, mins)
+            data.append(neuron.data)
 
-    # Max-Min normalization with angle in 0 - 180
-    # npdata = np.array(data)
-    # maxs = np.ndarray.max(npdata, axis=0).tolist()
-    # mins = np.ndarray.min(npdata, axis=0).tolist()
-    # data = []
-    # # set range to degree parameters.
-    # maxs[-2] = maxs[-3] = 180
-    # mins[-2] = mins[-3] = 0
-    # print(maxs)
-    # print(mins)
-    # for neuron in neurons:
-    #     neuron.max_min(maxs, mins)
-    #     data.append(neuron.data)
+        # Max-Min normalization with angle in 0 - 180
+        # npdata = np.array(data)
+        # maxs = np.ndarray.max(npdata, axis=0).tolist()
+        # mins = np.ndarray.min(npdata, axis=0).tolist()
+        # data = []
+        # # set range to degree parameters.
+        # maxs[-2] = maxs[-3] = 180
+        # mins[-2] = mins[-3] = 0
+        # print(maxs)
+        # print(mins)
+        # for neuron in neurons:
+        #     neuron.max_min(maxs, mins)
+        #     data.append(neuron.data)
 
-    # np_data = np.array(data)
-    # pdists = spd.squareform(spd.pdist(np_data, 'euclidean')).tolist()
-    # with open(dist_mat_folder + 'distances_dvec_23478_L2.txt', 'w') as file:
-    #     s = str(len(data))
-    #     file.write(s + ' ' + s + '\n')
-    #     for row in pdists:
-    #         for ele in row:
-    #             file.write('{0:.6f}'.format(ele) + ' ')
-    #         file.write('\n')
-
-    # For all features
-    np_data = np.array(data)
-    for i in range(np_data.shape[1]):
-        col_data = np_data[:, i]
-        with open(dist_mat_folder + 'distances_feature' + str(i) + '.txt', 'w') as file:
+        np_data = np.array(data)
+        pdists = spd.squareform(spd.pdist(np_data, 'cityblock')).tolist()
+        with open(dist_mat_folder + str(i) + '_distances_dvec_23478_L1.txt', 'w') as file:
             s = str(len(data))
             file.write(s + ' ' + s + '\n')
-            for e1 in col_data:
-                for e2 in col_data:
-                    file.write('{0:.6f}'.format(abs(e1 - e2)) + ' ')
+            for row in pdists:
+                for ele in row:
+                    file.write('{0:.6f}'.format(ele) + ' ')
                 file.write('\n')
+
+        # For all features
+        # np_data = np.array(data)
+        # for j in range(np_data.shape[1]):
+        #     col_data = np_data[:, j]
+        #     with open(dist_mat_folder + 'distances_feature' + str(j) + '.txt', 'w') as file:
+        #         s = str(len(data))
+        #         file.write(s + ' ' + s + '\n')
+        #         for e1 in col_data:
+        #             for e2 in col_data:
+        #                 file.write('{0:.6f}'.format(abs(e1 - e2)) + ' ')
+        #             file.write('\n')

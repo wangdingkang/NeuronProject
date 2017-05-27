@@ -17,11 +17,15 @@ if __name__ == '__main__':
 
     dirs = os.listdir(input_neuron)
     for dir in dirs:
-        files = os.listdir(input_neuron + dir)
-        for file in files:
-            src = dict[file.split('.')[0]]
-            dst_dir = output + dir
-            if not os.path.exists(dst_dir):
-                os.mkdir(dst_dir)
-            dst = dst_dir + '/' + file.split('.')[0] + '.txt'
-            copyfile(src, dst)
+        for sdir in os.listdir(input_neuron + dir):
+            files = os.listdir(input_neuron + dir + '/' + sdir)
+            for file in files:
+                src = dict[file.split('.')[0]]
+                dst_dir = output + dir
+                if not os.path.exists(dst_dir):
+                    os.mkdir(dst_dir)
+                dst_dir = dst_dir + '/' + sdir
+                if not os.path.exists(dst_dir):
+                    os.mkdir(dst_dir)
+                dst = dst_dir + '/' + file.split('.')[0] + '.txt'
+                copyfile(src, dst)
