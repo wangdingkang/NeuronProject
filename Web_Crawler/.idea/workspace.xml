@@ -20,7 +20,30 @@
     <favorites_list name="Web_Crawler" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="Var&amp;Mean&amp;Range.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Var&amp;Mean&amp;Range.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="502">
+              <caret line="28" column="69" selection-start-line="28" selection-start-column="69" selection-end-line="28" selection-end-column="69" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Geodesic_L1_vectorization.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Iter_Rets/Geodesic_L1_vectorization.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -39,6 +62,7 @@
         <option value="$PROJECT_DIR$/subsample.py" />
         <option value="$PROJECT_DIR$/transfer.py" />
         <option value="$PROJECT_DIR$/nlize&amp;dist_mat.py" />
+        <option value="$PROJECT_DIR$/Var&amp;Mean&amp;Range.py" />
       </list>
     </option>
   </component>
@@ -73,6 +97,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -105,28 +131,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Web_Crawler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Web_Crawler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="distance_mat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="old_dataset" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -136,38 +142,21 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/定康/Documents/GitHub/NeuronProject/Web_Crawler/crawled/C2/214.txt" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\定康\Documents\GitHub\NeuronProject\Web_Crawler\Iter_Rets" />
+      <recent name="C:\Users\定康\Documents\GitHub\NeuronProject\Web_Crawler\distance_mat\old_dataset" />
+      <recent name="C:\Users\定康\Documents\GitHub\NeuronProject\Web_Crawler\old_dataset" />
+      <recent name="C:\Users\定康\Documents\GitHub\NeuronProject\Web_Crawler\distance_mat\L2" />
+      <recent name="C:\Users\定康\Documents\GitHub\NeuronProject\Web_Crawler\distance_mat\L1" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\定康\Documents\GitHub\NeuronProject\Web_Crawler\distance_mat\old_dataset" />
       <recent name="C:\Users\定康\Documents\GitHub\NeuronProject\Web_Crawler\distance_mat\new_dataset" />
       <recent name="C:\Users\定康\Documents\GitHub\NeuronProject\Web_Crawler\distance_mat\L1" />
       <recent name="C:\Users\定康\Documents\GitHub\NeuronProject\Web_Crawler\distance_mat\L2" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\定康\Documents\GitHub\NeuronProject\Web_Crawler\distance_mat\old_dataset" />
-      <recent name="C:\Users\定康\Documents\GitHub\NeuronProject\Web_Crawler\old_dataset" />
-      <recent name="C:\Users\定康\Documents\GitHub\NeuronProject\Web_Crawler\distance_mat\L2" />
-      <recent name="C:\Users\定康\Documents\GitHub\NeuronProject\Web_Crawler\distance_mat\L1" />
-      <recent name="C:\Users\定康\Documents\GitHub\NeuronProject\Web_Crawler\crawled\transmedulla" />
-    </key>
   </component>
-  <component name="RunManager" selected="Python.nlize&amp;dist_mat">
-    <configuration default="false" name="crawler" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Web_Crawler" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/crawler.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.Var&amp;Mean&amp;Range">
     <configuration default="false" name="nlize&amp;dist_mat" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -232,6 +221,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Web_Crawler" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/subsample.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Var&amp;Mean&amp;Range" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Web_Crawler" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Var&amp;Mean&amp;Range.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -371,19 +377,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.crawler" />
-      <item index="1" class="java.lang.String" itemvalue="Python.nlize&amp;dist_mat" />
-      <item index="2" class="java.lang.String" itemvalue="Python.WeightedDistance" />
-      <item index="3" class="java.lang.String" itemvalue="Python.transfer" />
-      <item index="4" class="java.lang.String" itemvalue="Python.subsample" />
+      <item index="0" class="java.lang.String" itemvalue="Python.nlize&amp;dist_mat" />
+      <item index="1" class="java.lang.String" itemvalue="Python.WeightedDistance" />
+      <item index="2" class="java.lang.String" itemvalue="Python.transfer" />
+      <item index="3" class="java.lang.String" itemvalue="Python.subsample" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Var&amp;Mean&amp;Range" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.nlize&amp;dist_mat" />
-        <item index="1" class="java.lang.String" itemvalue="Python.transfer" />
-        <item index="2" class="java.lang.String" itemvalue="Python.subsample" />
-        <item index="3" class="java.lang.String" itemvalue="Python.WeightedDistance" />
-        <item index="4" class="java.lang.String" itemvalue="Python.crawler" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Var&amp;Mean&amp;Range" />
+        <item index="1" class="java.lang.String" itemvalue="Python.nlize&amp;dist_mat" />
+        <item index="2" class="java.lang.String" itemvalue="Python.transfer" />
+        <item index="3" class="java.lang.String" itemvalue="Python.subsample" />
+        <item index="4" class="java.lang.String" itemvalue="Python.WeightedDistance" />
       </list>
     </recent_temporary>
   </component>
@@ -407,7 +413,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2109375" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2109375" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -447,8 +453,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/normalized_info/Dm1/305552.txt" />
-    <entry file="file://$PROJECT_DIR$/distance_mat/new_dataset/L2/distances_zscore.txt" />
     <entry file="file://$PROJECT_DIR$/distance_mat/new_dataset/L2/distances_pure-max-min.txt" />
     <entry file="file://$PROJECT_DIR$/distance_mat/new_dataset/L2/distances_max-min-degree-0-180.txt" />
     <entry file="file://$PROJECT_DIR$/crawled/transmedulla/89.txt" />
@@ -540,13 +544,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WeightedDistance.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/subsample.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="439">
@@ -558,7 +555,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -566,9 +562,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="397">
           <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -576,7 +569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -584,7 +576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -592,7 +583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -600,7 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -608,7 +597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -616,7 +604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -624,7 +611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -632,7 +618,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Iter_Rets/Geodesic_L1_vectorization.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeightedDistance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2">
+          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Var&amp;Mean&amp;Range.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="28" column="69" selection-start-line="28" selection-start-column="69" selection-end-line="28" selection-end-column="69" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
