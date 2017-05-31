@@ -1,12 +1,21 @@
 import numpy as np
+import os
 
-alpha = 0.25
+alpha = 0.75
 
-input_file1 = 'distance_mat/old_dataset/distances_dvec.txt'
-input_file2 = 'distance_mat/old_dataset/distances_dvec_23478_L1.txt'
-output_file = 'distance_mat/old_dataset/distances_dvec_23478_L1_' + str(alpha) + '_' + str(1 - alpha) + '.txt'
+input_folder1 = 'distance_mat/subsample_dvec/'
+input_folder2 = 'distance_mat/subsample_dlm/'
+file1s = os.listdir(input_folder1)
+file2s = os.listdir(input_folder2)
 
-if __name__ == '__main__':
+for input_file1, input_file2 in zip(file1s, file2s):
+    # input_file1 = 'distance_mat/old_dataset/distances_dvec.txt'
+    # input_file2 = 'distance_mat/old_dataset/distances_dvec_23478_L1.txt'
+    output_file = 'distance_mat/' + input_file1[:input_file1.find('_')] + '_distances_dvec_0456910_L1_' + str(alpha) + '_' + str(1 - alpha) + '.txt'
+    input_file1 = input_folder1 + input_file1
+    input_file2 = input_folder2 + input_file2
+    print(input_file1, input_file2, output_file)
+
     data1, data2 = [], []
 
     with open(input_file1, 'r') as file:
