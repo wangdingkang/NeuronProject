@@ -25,6 +25,12 @@ if __name__ == '__main__':
                 means = np.mean(ret_np, axis=0)
                 maxs = np.max(ret_np, axis=0)
                 mins = np.min(ret_np, axis=0)
-                print(variances, means)
+                for m in means:
+                    print('{0:.4f}'.format(m), end='\t')
+                print()
+                for v in variances:
+                    print('{0:.6f}'.format(v), end='\t')
+                print()
                 for mi, ma in zip(mins, maxs):
-                    print('{0:.4f}'.format(mi), '-', '{0:.4f}'.format(ma))
+                    print('{0:.4f}'.format(mi), '-', '{0:.4f}'.format(ma), end='\t')
+                print()

@@ -2,7 +2,7 @@ import os
 import numpy as np
 import scipy.spatial.distance as spd
 
-input_folder = 'subsampled_data\\'
+input_folder = 'crawled\\'
 dist_mat_folder = 'distance_mat\\'
 
 
@@ -37,7 +37,7 @@ def read_file(filename):
 
 def read_file_remove_0456910(filename):
     ret = []
-    with open(filename, 'r')  as file:
+    with open(filename, 'r') as file:
         for line in file:
             ret.append(float(line.split()[1]))
     to_del = [10, 9, 6, 5, 4, 0]
@@ -47,8 +47,8 @@ def read_file_remove_0456910(filename):
 
 
 if __name__ == '__main__':
-    for i in range(20):
-        input_files = all_input_files(input_folder + str(i) + '\\')
+    # for i in range(20):
+        input_files = all_input_files(input_folder + '\\')
         neurons = []
         # cnt_file = len(input_files)
         data = []
@@ -93,7 +93,7 @@ if __name__ == '__main__':
 
         np_data = np.array(data)
         pdists = spd.squareform(spd.pdist(np_data, 'cityblock')).tolist()
-        with open(dist_mat_folder + str(i) + '_distances_dvec_0456910_L1.txt', 'w') as file:
+        with open(dist_mat_folder + 'distances_dvec_0456910_L1.txt', 'w') as file:
             s = str(len(data))
             file.write(s + ' ' + s + '\n')
             for row in pdists:
