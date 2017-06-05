@@ -28,8 +28,8 @@ class LFeatureSpider(scrapy.Spider):
         # name = response.url.split("=")[-1]
         filename = response.meta['pos'];
         info = response.css('table[id=NeuronInfotable11]')
-        itemnames = info.css('td[align=right]::text').extract()
-        itemvalues = info.css('td[align=left]::text').extract()
+        itemnames = info.css('td[align=right]::text').extract()[1:]
+        itemvalues = info.css('td[align=left]::text').extract()[1:]
 
         itemnames[:] = [re.sub('[^a-zA-z0-9\.]', '', itemname) for itemname in itemnames]
         itemvalues[:] = [re.sub('[^0-9\.]', '', itemvalue) for itemvalue in itemvalues]

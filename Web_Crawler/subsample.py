@@ -4,7 +4,7 @@ from shutil import copyfile
 
 input_folder = 'neurons\\'
 output_folder = 'subsampled\\'
-subsampled_size = 100
+subsampled_size = 900
 
 if __name__ == '__main__':
 

@@ -1,7 +1,7 @@
 import numpy as np
 import os
 
-alpha = 0.25
+alpha = 0.75
 
 input_folder1 = 'distance_mat/subsample_dvec/'
 input_folder2 = 'distance_mat/subsample_dlm/'
