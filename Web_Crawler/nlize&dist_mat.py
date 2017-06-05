@@ -2,7 +2,7 @@ import os
 import numpy as np
 import scipy.spatial.distance as spd
 
-input_folder = 'crawled\\'
+input_folder = 'subsampled_data\\'
 dist_mat_folder = 'distance_mat\\'
 
 
@@ -46,8 +46,8 @@ def read_file_remove(filename, tdel):
 
 
 if __name__ == '__main__':
-    # for i in range(20):
-        input_files = all_input_files(input_folder)
+    for i in range(20):
+        input_files = all_input_files(input_folder + str(i))
         neurons = []
         # cnt_file = len(input_files)
         data = []
@@ -90,24 +90,24 @@ if __name__ == '__main__':
         #     neuron.max_min(maxs, mins)
         #     data.append(neuron.data)
 
-        # np_data = np.array(data)
-        # pdists = spd.squareform(spd.pdist(np_data, 'cityblock')).tolist()
-        # with open(dist_mat_folder + str(i) + '_distances_dvec_0456910_L1.txt', 'w') as file:
-        #     s = str(len(data))
-        #     file.write(s + ' ' + s + '\n')
-        #     for row in pdists:
-        #         for ele in row:
-        #             file.write('{0:.6f}'.format(ele) + ' ')
-        #         file.write('\n')
+        np_data = np.array(data)
+        pdists = spd.squareform(spd.pdist(np_data, 'cityblock')).tolist()
+        with open(dist_mat_folder + str(i) + '_distances_dl.txt', 'w') as file:
+            s = str(len(data))
+            file.write(s + ' ' + s + '\n')
+            for row in pdists:
+                for ele in row:
+                    file.write('{0:.6f}'.format(ele) + ' ')
+                file.write('\n')
 
         # For all features
-        np_data = np.array(data)
-        for j in range(np_data.shape[1]):
-            col_data = np_data[:, j]
-            with open(dist_mat_folder + 'distances_feature' + str(j) + '.txt', 'w') as file:
-                s = str(len(data))
-                file.write(s + ' ' + s + '\n')
-                for e1 in col_data:
-                    for e2 in col_data:
-                        file.write('{0:.6f}'.format(abs(e1 - e2)) + ' ')
-                    file.write('\n')
+        # np_data = np.array(data)
+        # for j in range(np_data.shape[1]):
+        #     col_data = np_data[:, j]
+        #     with open(dist_mat_folder + 'distances_feature' + str(j) + '.txt', 'w') as file:
+        #         s = str(len(data))
+        #         file.write(s + ' ' + s + '\n')
+        #         for e1 in col_data:
+        #             for e2 in col_data:
+        #                 file.write('{0:.6f}'.format(abs(e1 - e2)) + ' ')
+        #             file.write('\n')

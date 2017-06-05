@@ -23,7 +23,38 @@
     <favorites_list name="Web_Crawler" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="WeightedDistance.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WeightedDistance.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="transfer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/transfer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nlize&amp;dist_mat.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/nlize&amp;dist_mat.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="166">
+              <caret line="94" column="47" selection-start-line="94" selection-start-column="47" selection-end-line="94" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -39,9 +70,9 @@
         <option value="$PROJECT_DIR$/crawled/C2/207375.txt" />
         <option value="$PROJECT_DIR$/transfer.py" />
         <option value="$PROJECT_DIR$/Var&amp;Mean&amp;Range.py" />
-        <option value="$PROJECT_DIR$/WeightedDistance.py" />
         <option value="$PROJECT_DIR$/subsample.py" />
         <option value="$PROJECT_DIR$/crawler.py" />
+        <option value="$PROJECT_DIR$/WeightedDistance.py" />
         <option value="$PROJECT_DIR$/nlize&amp;dist_mat.py" />
       </list>
     </option>
@@ -77,7 +108,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -97,8 +127,51 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web_Crawler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web_Crawler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="subsampled_data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web_Crawler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web_Crawler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="subsampled" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web_Crawler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web_Crawler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="distance_mat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -108,19 +181,19 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/定康/Documents/GitHub/NeuronProject/Web_Crawler/crawled/C2/214.txt" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\定康\Documents\GitHub\NeuronProject\Web_Crawler\crawled" />
-      <recent name="C:\Users\定康\Documents\GitHub\NeuronProject\Web_Crawler\neurons" />
-      <recent name="C:\Users\定康\Documents\GitHub\NeuronProject\Web_Crawler\distance_mat\subsample_dvec" />
-      <recent name="C:\Users\定康\Documents\GitHub\NeuronProject\Web_Crawler\distance_mat\subsample_dlm" />
-      <recent name="C:\Users\定康\Documents\GitHub\NeuronProject\Web_Crawler\Iter_Rets" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\定康\Documents\GitHub\NeuronProject\Web_Crawler\distance_mat\subsample_dvec" />
       <recent name="C:\Users\定康\Documents\GitHub\NeuronProject\Web_Crawler\distance_mat\subsample_dlm" />
+      <recent name="C:\Users\定康\Documents\GitHub\NeuronProject\Web_Crawler\distance_mat\subsample_dvec" />
       <recent name="C:\Users\定康\Documents\GitHub\NeuronProject\Web_Crawler\Iter_Rets\dataset1" />
       <recent name="C:\Users\定康\Documents\GitHub\NeuronProject\Web_Crawler\distance_mat\weighted" />
       <recent name="C:\Users\定康\Documents\GitHub\NeuronProject\Web_Crawler\distance_mat\old_dataset" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\定康\Documents\GitHub\NeuronProject\Web_Crawler\subsampled" />
+      <recent name="C:\Users\定康\Documents\GitHub\NeuronProject\Web_Crawler\distance_mat\subsample_dvec" />
+      <recent name="C:\Users\定康\Documents\GitHub\NeuronProject\Web_Crawler\crawled" />
+      <recent name="C:\Users\定康\Documents\GitHub\NeuronProject\Web_Crawler\neurons" />
+      <recent name="C:\Users\定康\Documents\GitHub\NeuronProject\Web_Crawler\distance_mat\subsample_dlm" />
     </key>
   </component>
   <component name="RunManager" selected="Python.nlize&amp;dist_mat">
@@ -354,8 +427,8 @@
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.nlize&amp;dist_mat" />
         <item index="1" class="java.lang.String" itemvalue="Python.transfer" />
-        <item index="2" class="java.lang.String" itemvalue="Python.subsample" />
-        <item index="3" class="java.lang.String" itemvalue="Python.WeightedDistance" />
+        <item index="2" class="java.lang.String" itemvalue="Python.WeightedDistance" />
+        <item index="3" class="java.lang.String" itemvalue="Python.subsample" />
         <item index="4" class="java.lang.String" itemvalue="Python.Var&amp;Mean&amp;Range" />
       </list>
     </recent_temporary>
@@ -420,9 +493,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/distance_mat/subsample_dlm/0_distances_dvec_23478_L1.txt" />
-    <entry file="file://$PROJECT_DIR$/distance_mat/weighted/0_distances_dvec_23478_L1_0.25_0.75.txt" />
-    <entry file="file://$PROJECT_DIR$/distance_mat/weighted/2_distances_dvec_23478_L1_0.25_0.75.txt" />
     <entry file="file://$PROJECT_DIR$/distance_mat/weighted/3_distances_dvec_23478_L1_0.25_0.75.txt" />
     <entry file="file://$PROJECT_DIR$/distance_mat/weighted/4_distances_dvec_23478_L1_0.25_0.75.txt" />
     <entry file="file://$PROJECT_DIR$/distance_mat/weighted/7_distances_dvec_23478_L1_0.25_0.75.txt" />
@@ -452,39 +522,14 @@
     <entry file="file://$PROJECT_DIR$/crawled/hippo_interneurons/ascoli+barrionuevo+diadem/CNG version/axon/axon_118-LM-HiDe.txt" />
     <entry file="file://$PROJECT_DIR$/distance_mat/subsample_dlm/0_distances_dvec_456910_L1.txt" />
     <entry file="file://$PROJECT_DIR$/distance_mat/subsample_dvec/0_distances_dvec.txt" />
-    <entry file="file://$PROJECT_DIR$/crawled/neuron_nmo_inter/markram/CNG version/C040426.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/crawled/neuron_nmo_inter/markram/CNG version/C040426.txt" />
     <entry file="file://$PROJECT_DIR$/distance_mat/subsample_dlm/0_distances_dvec_0456910_L1.txt" />
     <entry file="file://$PROJECT_DIR$/Iter_Rets/0.5_0.5_L1.txt" />
     <entry file="file://$PROJECT_DIR$/Iter_Rets/wass_L1.txt" />
     <entry file="file://$PROJECT_DIR$/Iter_Rets/dv_L1.txt" />
     <entry file="file://$PROJECT_DIR$/distance_mat/distances_dvec_0456910_L1.txt" />
-    <entry file="file://$PROJECT_DIR$/distance_mat/subsample_dvec/eucli_distances_dvec.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/distance_mat/subsample_dlm/distances_dvec_0456910_L1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WeightedDistance.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/distance_mat/subsample_dvec/eucli_distances_dvec.txt" />
+    <entry file="file://$PROJECT_DIR$/distance_mat/subsample_dlm/distances_dvec_0456910_L1.txt" />
     <entry file="file://$PROJECT_DIR$/Var&amp;Mean&amp;Range.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
@@ -492,19 +537,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/transfer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/subsample.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/distance_mat/distances_feature0.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawled/L1/196.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="31" column="66" selection-start-line="31" selection-start-column="66" selection-end-line="31" selection-end-column="66" />
         </state>
       </provider>
     </entry>
@@ -524,7 +581,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/distance_mat/distances_feature0.txt">
+    <entry file="file://$PROJECT_DIR$/distance_mat/subsample_dlm/distances_dl.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/distance_mat/subsample_dvec/distances_dvec.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -532,18 +597,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crawled/L1/196.txt">
+    <entry file="file://$PROJECT_DIR$/WeightedDistance.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="31" column="66" selection-start-line="31" selection-start-column="66" selection-end-line="31" selection-end-column="66" />
+        <state relative-caret-position="42">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -556,10 +613,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/transfer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/distance_mat/0_distances_dl.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/nlize&amp;dist_mat.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="56" column="32" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
+        <state relative-caret-position="166">
+          <caret line="94" column="47" selection-start-line="94" selection-start-column="47" selection-end-line="94" selection-end-column="47" />
           <folding />
         </state>
       </provider>
